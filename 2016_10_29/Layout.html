@@ -1,0 +1,81 @@
+<Html>
+	<Head>
+		<Title>Layout</Title>
+			<Style>
+				body{
+					margin:0;
+				}
+				.Outer{
+				text-align:center;
+					margin:auto;
+					background-color:black;
+					color:white;
+					width:800px;
+					overflow:hidden;
+				}
+				.Logo{
+					
+					width:800px;
+					border: 1px solid white;
+				}
+				.left{
+					width:190px;
+					height:100%;
+					float:left;
+					margin:1px;
+					border: 1px solid white;
+				}
+				.left-top{
+					width:100%;
+					height:285px;
+					border: 1px solid white;	
+				}
+				#left-bottom{
+					background-color:white;
+					height:265px;
+					border: 1px solid black;
+				}
+				.right-content{
+					border-bottom:2px solid white;
+					height:196px;
+				}
+				.content{
+					width:400px;
+					height:100%;
+					border: 1px solid white;
+					float:left;
+				}
+				.content-left{
+					width:50%;
+					padding:15px;
+					border:1px solid white;
+				}
+				.bottom{
+					width:770px;
+					padding:15px;
+					border: 1px solid white;
+					float:left;
+				}
+			</Style>
+	</Head>
+	
+	<Body>
+		<div class="Outer">
+			<div class="Logo">1.Logo & Header</div>
+			<div class="Logo">2.Navigation</div>
+			<div class="left">
+				<div class="left-top">left-top</div>
+				<div class="left-top" id="left-bottom">left-bottom</div>
+			</div>
+			<div class="content">
+				<div class="content-left">primary</div>
+			</div>
+			<div class="left">
+				<div class="right-content">1</div>
+				<div class="right-content">2</div>
+				<div class="right-content">3</div>
+			</div>
+			<div class="bottom">bottom</div>
+		</div>
+	</Body>
+</Html>

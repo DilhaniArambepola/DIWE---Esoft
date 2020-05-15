@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<form id="form1" name="form1" method="get" action="" onsubmit=" return validateForm()">
+  <p>
+    <label for="txtFName">First Name</label>
+    <input type="text" name="txtFName" id="txtFName" />
+    <label for="txtCPass"><br />
+      <br />
+    </label>
+    <label for="txtLName">Last Name</label>
+    <input type="text" name="txtLName" id="txtLName" />
+  </p>
+  <p>
+    <label for="txtPass">Password</label>
+    <input type="password" name="txtPass" id="txtPass" />
+  </p>
+  <p>
+    <label for="txtCPass"> Confirm Password</label>
+    <input type="password" name="txtCPass" id="txtCPass" />
+  </p>
+  <p id ="errPass"></p>
+  <p>
+    <label for="txtLName"></label>
+  </p>
+<p>&nbsp;</p>
+  <p id ="errLName"></p>
+  <p>
+    <input type="submit" name="btnReg" id="btnReg" value="Register" />
+  </p>
+</form>
+
+<script type="text/javascript">
+
+var isValid = true;
+
+	function validateForm(){
+			var fname = document.getElementById("txtFName").value;
+			var lname = document.getElementById("txtLName").value;
+						var pass = document.getElementById("txtPass").value;
+									var cpass = document.getElementById("txtCPass").value;
+		
+			if(fname===""){
+				document.getElementById("errFName").innerHTML = "Enter first name";
+				isValid = false;
+			}
+			
+			if(lname===""){
+				document.getElementById("errLName").innerHTML = "Enter last name";
+				isValid = false;
+			}
+			
+			if(pass===cpass){
+				document.getElementById("errLName").innerHTML = "Password does not match";
+				isValid = false;
+			}
+			return isValid;
+		}
+
+</script>
+
+</body>
+</html>

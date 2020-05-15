@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>java1</title>
+</head>
+
+<body>
+<p id="para"></p>
+<script type="text/javascript">
+	//window.alert('ESOFT');
+	//document.write("Metro Campus");
+	//console.log('HELLO'  );
+	//document.getElementById('para').innerHTML = "<b>Hello</b>World";
+
+	/*
+	
+	var x=1;
+	
+	while(x<10){
+		document.write("Number is "+ x+"<br>");
+		x++;
+		}*/
+		
+		var names = ["Viraj", "Amila", "Kasun", "Janaka"];	//ARRAY
+		var arrSize = names.length;	//length of a array
+		
+		document.write("Size is "+arrSize+"<br>");
+		
+		document.write(names[2]+"<br>");
+		document.write(names[4]+"<br>");
+		
+		names[4] = "Nipuna";	//update an array
+		
+		arrSize=names.length;
+		document.write("Size is "+arrSize+"<br>");
+		document.write("Last element of the array is "+names[arrSize-1]+"<br>");
+		
+		document.write(names[4]);
+		
+		document.write("<table border=1>");
+		document.write("<tr><th>Index</th><th>Names</th></tr>");
+		for(var i=0; i<arrSize; i++){
+				document.write("<tr><td>"+i+"</td><td>"+names[i]+"</td></tr>");
+			}
+		document.write("<br>");
+		
+
+</script>
+  
+</body>
+</html>

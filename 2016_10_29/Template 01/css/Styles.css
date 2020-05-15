@@ -1,0 +1,204 @@
+@charset "utf-8";
+.header-outer {
+	background-color: #333;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	width: 100%;
+	border-bottom-color: #900;
+	display: block;
+}
+.header-inner {
+	margin: auto;
+	width: 960px;
+	overflow: hidden;
+	display: block;
+}
+.logo {
+	color: #FC6;
+	float: left;
+}
+.menu-wrapper {
+	float: right;
+	margin-top: 15px;
+}
+.content-outer {
+	width: 960px;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-bottom: 15px;
+	margin-left: auto;
+	display: block;
+	clear: both;
+	overflow: hidden;
+	background-color: #FFF;
+	padding: 10px;
+	border: 1px solid #CCC;
+}
+.fetured-wrapper {
+	width: 960px;
+	background-color: #666;
+}
+.popular-wrapper {
+	height: 200px;
+	width: 960px;
+	margin-top: 15px;
+}
+.popular-itm {
+	background-color: #FFF;
+	float: left;
+	width: 290px;
+	margin-right: 15px;
+	padding: 9px;
+	border: 1px solid #CCC;
+}
+.last-itm {
+	margin-right: 0px;
+}
+.content-wrapper {
+	width: 960px;
+	margin-bottom: 15px;
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+.sidebar-left {
+	float: left;
+	width: 250px;
+	margin-right: 15px;
+	display: block;
+}
+.main-content {
+	display: block;
+	float: left;
+	width: 695px;
+	overflow: hidden;
+}
+.product-wrapper {
+	display: block;
+	width: 215px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	float: left;
+	background-color: #FFF;
+	padding: 4px;
+	border: 1px solid #CCC;
+}
+.product-wrapper img {
+	width: 215px;
+	background-color: #FFF;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #CACACA;
+	border-right-color: #CACACA;
+	border-bottom-color: #CACACA;
+	border-left-color: #CACACA;
+}
+.product-wrapper h2 {
+	font-size: 18px;
+	color: #333;
+	margin-top: 5px;
+	clear: both;
+	margin-bottom: 5px;
+}
+.last-product {
+	margin-right: 0px;
+}
+.price-tag {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #06F;
+	padding: 4px;
+	float: left;
+	margin-right: 10px;
+}
+.readmore {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #F90;
+	padding: 4px;
+	float: left;
+}
+.main-content h1 {
+	font-size: 24px;
+	color: #099;
+	font-weight: bold;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #099;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+}
+.logo h1 {
+	margin: 0px;
+	font-size: 36px;
+}
+.logo p {
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+}
+.fetured-wrapper img {
+	width: 100%;
+}
+.footer {
+	background-color: #333;
+	padding: 10px;
+	width: 100%;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #03F;
+	color: #FFF;
+	text-align: center;
+	font-size: 12px;
+}
+.sidebar-left h2 {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #099;
+	color: #099;
+	font-size: 24px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+}
+.sidebar-block {
+	margin-bottom: 15px;
+	display: block;
+	overflow: hidden;
+}
+.suggest-products {
+
+}
+.sugg-prod-itm {
+	clear: both;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.sugg-prod-itm img {
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin-right: 10px;
+}
+.sugg-prod-itm a {
+	font-size: 16px;
+	display: block;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+}
+.sugg-prod-itm .price-tag {
+	font-size: 10px;
+	padding: 3px;
+}

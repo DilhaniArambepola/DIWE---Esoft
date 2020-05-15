@@ -1,0 +1,33 @@
+<?php
+
+// if user clicked register button
+if (isset($_REQUEST['btnSave'])) {
+
+    // read data from the form
+    $prodName = $_POST['txtProdName'];
+    $price = $_POST['txtPrice'];
+    $shipping = $_POST['txtShipping'];
+    $qty = $_POST['txtProdQty'];
+    $prodImg = $_FILES["txtImage"]["name"];
+    
+    // upload image to the server
+    $target_dir = "../../uploads/";
+    $target_file = $target_dir . basename($_FILES["txtImage"]["name"]);
+
+    // save image in upload directory
+    move_uploaded_file($_FILES["txtImage"]["tmp_name"], $target_file);
+
+
+    include "../../dbconfig.php";
+
+    // register the user
+    //  php source code to EXECUTE INSERT INTO Query
+    $sql = "INSERT INTO `product` (`prodName`, `sellingPrice`, `shippingPrice`, `prodQty`, `prodImg`) "
+            . "VALUES ('$prodName', '$price', '$shipping', '$qty', '$prodImg');";
+    if ($conn->query($sql) === TRUE) { // successfully added
+        header("location: ../add-product.php?success");
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+?>

@@ -1,0 +1,16 @@
+<?php 
+
+// dbconfig.php file contains database connection codes
+include 'dbconfig.php';
+
+
+// php source code to EXECUTE INSERT INTO Query
+$sql = "UPDATE user SET userName='abc updated',
+ password='456' WHERE iduser ='3';";
+	
+	if ($conn->query($sql) === TRUE){
+		echo "Updated successfully";	
+	}else{
+		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+?>

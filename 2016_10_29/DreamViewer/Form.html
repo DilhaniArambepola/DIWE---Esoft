@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registration Form</title>
+</head>
+
+<body>
+
+
+
+<form action="" method="get" onsubmit="return validateForm()">
+  <p>
+   
+  </p>
+  
+  <p>Registration Form</p>
+  <table width="650" border="1">
+    <tr>
+      <td><label for="txtFName2">First Name</label></td>
+      <td><input name="txtFName" type="text" id="txtFName2" size="20" /></td>
+      <td><p id="errorFname" style="color:red"></p></td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td><input name="txtLName" type="text" id="txtLName" size="40" /></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td><input type="password" name="password1" id="password1" /></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><label for="password4">Confirm Password</label></td>
+      <td><input type="password" name="password2" id="password2" /></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><span style="color:red">
+        <input name="email" type="text" id="email" size="60" />
+      </span></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Contact Number</td>
+      <td><input type="text" name="contactNumber" id="contactNumber" /></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="btnReg" id="btnReg" value="Register" /></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p id="errorPassword" style="color:red"></p>
+<p id="errorEmail" style="color:red"></p> 
+  <p>&nbsp;</p>
+	<p id="errorCNumber" style="color:red"></p> 
+  <p>&nbsp;</p>
+</form>
+<script type="text/javascript">
+
+	function validateForm(){
+			var formStatus=true;
+			var fname = document.getElementById("txtFName").value;
+			var lname = document.getElementById("txtLName").value;
+			var password = document.getElementById("password1").value;
+			var cpassword = document.getElementById("password2").value;
+			var contactNumber = document.getElementById("contactNumber").value;
+			
+					var rexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			
+			if(!rexEmail.test(email)){
+					document.getElementById("errorEmail").innerHTML="Invalid Email";
+					formStatus=false;
+				}
+			
+			if(fname===""){
+					document.getElementById("errorFname").innerHTML="Please enter first name";
+					formStatus=false;
+				}
+				
+			if(lname===""){			
+					document.getElementById("errorLname").innerHTML="Please enter last name";
+					formStatus=false;
+				}
+				
+			if(password!==cpassword){
+					document.getElementById("errorPassword").innerHTML="Password does not match";
+					formStatus=false;
+				}
+				
+			if(contactNumber===""){
+					document.getElementById("errorCNumber").innerHTML="Please enter Contact Number";
+					formStatus=false;
+				}
+				
+				return formStatus;
+		}
+
+</script>
+</body>
+</html>

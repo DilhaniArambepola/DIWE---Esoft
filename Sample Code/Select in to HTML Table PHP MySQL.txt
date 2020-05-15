@@ -1,0 +1,39 @@
+
+<?php 
+
+// dbconfig.php file contains database connection codes
+include 'dbconfig.php';
+
+
+
+$sql = "SELECT userName,fullName,password FROM user";
+
+// execute the query and stores the 
+//returned records in $result variable
+$result = $conn->query($sql);
+
+// checks whether result has one or more rows
+if ($result->num_rows > 0) {
+	
+	echo "<table border='1'>";
+	echo "<tr>
+				<th>Username</th>
+				<th>Fullname</th>
+				<th>Password</th>
+			</tr>";
+	  // output data of each row
+    while($row = $result->fetch_assoc()) {
+		echo "<tr>";
+			echo "<td>". $row['userName'] ."</td>";
+			echo "<td>". $row['fullName'] ."</td>";
+			echo "<td>". $row['password'] ."</td>";
+		echo "</tr>";
+	}
+	
+	echo "</table>";
+}else{
+	echo "0 results";
+}
+	
+?>
+
